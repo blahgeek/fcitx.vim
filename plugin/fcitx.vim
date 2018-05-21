@@ -8,6 +8,7 @@ scriptencoding utf-8
 if &cp || exists("g:loaded_fcitx") || (
       \ (!exists('$DISPLAY') || exists('$SSH_TTY') || has('gui_macvim'))
       \ && !exists('$FCITX_SOCKET'))
+  runtime so/fcitx.vim
   finish
 endif
 if has("python3")
